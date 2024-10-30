@@ -1,29 +1,23 @@
-/**
- * TODO: this file might not be needed if the GIFT format builder works well enough.
- * The idea of this file is to build an XML file for moodle import.
- */
-
 const fs = require("fs");
 const xmlbuilder = require("xmlbuilder");
 const { parse } = require("./utils/quiz-parser");
 const { writeFileCallback } = require("./utils/utils");
 
 const createQuestion = (root) => (question) => {
-  const questionEle = root.ele("question");
-  questionEle.ele("id", question.id);
-  questionEle.ele("quiz_id", question.quiz_id);
-  questionEle.ele("title", question.title);
-  questionEle.ele("questiontext", question.question);
-  questionEle.ele("correctfeedback", question.correct_msg);
-  questionEle.ele("incorrectfeedback", question.incorrect_msg);
+  const questionEle = root.ele("question", { type: question.type });
+  questionEle.ele("name").ele("text", question.title);
+  questionEle.ele("questiontext", { format: "html" }).ele("text", `<![CDATA[${question.question}]]>`);
+  questionEle.ele("generalfeedback").ele("text", question.generalfeedback || "");
+  questionEle.ele("defaultgrade", question.defaultgrade || 1);
+  questionEle.ele("penalty", question.penalty || 0);
+  questionEle.ele("hidden", question.hidden || 0);
 
-  const answersEle = questionEle.ele("answers");
+  const answersEle = questionEle.ele("answer");
 
   question.answers.forEach((answer) => {
-    const answerEle = answersEle.ele("answer");
-    answerEle.ele("id", answer.id);
-    answerEle.ele("answer", answer.answer);
-    answerEle.ele("points", answer.points);
+    const answerEle = answersEle.ele("answer", { fraction: answer.fraction });
+    answerEle.ele("text", `<![CDATA[${answer.answer}]]>`);
+    answerEle.ele("feedback").ele("text", answer.feedback || "");
   });
 };
 
@@ -51,6 +45,6 @@ const main = (path, outputPath) =>
   fs.readFile(path, "utf8", readFileCallback(outputPath));
 
 const inputPath = process.argv[2];
-const outputPath = "output/quiz.xml";
+const outputPath = "output/xml/quiz2.xml";
 
 main(inputPath, outputPath);

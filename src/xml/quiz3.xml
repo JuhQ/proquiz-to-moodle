@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="truefalse">
+    <name>
+      <text>Miksi rakentamisen muoveja pitää kerätä ja kierrättää? Moduuli 1 tehtävä 8</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;![CDATA[Muovin vastuullisella käytöllä ja oikeanlaisella kierrätyksellä on merkitystä vähähiilisyyden edistämiseksi rakentamisen ketjussa.]]&gt;</text>
+    </questiontext>
+    <generalfeedback>
+      <text/>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+  </question>
+  <question type="truefalse">
+    <name>
+      <text>Miksi rakentamisen muoveja pitää kerätä ja kierrättää? Moduuli 1 tehtävä 2</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;![CDATA[Suomen ilmastotavoitteet ovat vapaaehtoisia.]]&gt;</text>
+    </questiontext>
+    <generalfeedback>
+      <text/>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+  </question>
+  <question type="truefalse">
+    <name>
+      <text>Miksi rakentamisen muoveja pitää kerätä ja kierrättää? Moduuli 1 tehtävä 3</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;![CDATA[Green deal -sopimukset ovat vapaaehtoisia.]]&gt;</text>
+    </questiontext>
+    <generalfeedback>
+      <text/>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+  </question>
+  <question type="truefalse">
+    <name>
+      <text>Miksi rakentamisen muoveja pitää kerätä ja kierrättää? Moduuli 1 tehtävä 4</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;![CDATA[Mitä rakentamisen muovit green deal- sopimuksella tavoitellaan?]]&gt;</text>
+    </questiontext>
+    <generalfeedback>
+      <text/>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+  </question>
+  <question type="truefalse">
+    <name>
+      <text>Miksi rakentamisen muoveja pitää kerätä ja kierrättää? Moduuli 1 tehtävä 5</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;![CDATA[Miksi rakentamisen muoveja tulee kerätä ja kierrättää?]]&gt;</text>
+    </questiontext>
+    <generalfeedback>
+      <text/>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+  </question>
+  <question type="truefalse">
+    <name>
+      <text>Miksi rakentamisen muoveja pitää kerätä ja kierrättää? Moduuli 1 tehtävä 6</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;![CDATA[Jätehierarkian mukainen prioriteettijärjestys on: ]]&gt;</text>
+    </questiontext>
+    <generalfeedback>
+      <text/>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+  </question>
+  <question type="truefalse">
+    <name>
+      <text>Miksi rakentamisen muoveja pitää kerätä ja kierrättää? Moduuli 1 tehtävä 7</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;![CDATA[Suoraan rakentamiseen käytetään]]&gt;</text>
+    </questiontext>
+    <generalfeedback>
+      <text/>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+  </question>
+  <question type="truefalse">
+    <name>
+      <text>Miksi rakentamisen muoveja pitää kerätä ja kierrättää? Moduuli 1 tehtävä 9</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;![CDATA[Kiinteistö- ja rakennusala (KIRA-ala) tuottaa hiilidioksidipäästöjä noin ]]&gt;</text>
+    </questiontext>
+    <generalfeedback>
+      <text/>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+  </question>
+  <question type="truefalse">
+    <name>
+      <text>Miksi rakentamisen muoveja pitää kerätä ja kierrättää? Moduuli 1 tehtävä 10.</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;![CDATA[Missä rakentamisen ketjun työvaiheessa tyypillisesti syntyy kalvomuovijätettä? (voit valita useita)]]&gt;</text>
+    </questiontext>
+    <generalfeedback>
+      <text/>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+  </question>
+  <question type="truefalse">
+    <name>
+      <text>1.	Sinä voit omassa työssäsi vaikuttaa vähähiilisyys ja materiaalitehokkuus tavoitteiden saavuttamiseen.</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;![CDATA[Sinä voit omassa työssäsi vaikuttaa vähähiilisyys- ja materiaalitehokkuustavoitteiden saavuttamiseen.]]&gt;</text>
+    </questiontext>
+    <generalfeedback>
+      <text/>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+  </question>
+  <question type="truefalse">
+    <name>
+      <text>Miksi rakentamisen muoveja pitää kerätä ja kierrättää? Moduuli 1 tehtävä 11</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;![CDATA[Jätelainsäädännön keskeisiä tavoitteita ovat? Voit valita useita.]]&gt;</text>
+    </questiontext>
+    <generalfeedback>
+      <text/>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+  </question>
+  <question type="truefalse">
+    <name>
+      <text>Miksi rakentamisen muoveja pitää kerätä ja kierrättää? Moduuli 1 tehtävä 12</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;![CDATA[Mitkä seuraavista ovat kansallisen muovitiekartan toimenpiteitä?]]&gt;</text>
+    </questiontext>
+    <generalfeedback>
+      <text/>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+  </question>
+  <question type="truefalse">
+    <name>
+      <text>Miksi rakentamisen muoveja pitää kerätä ja kierrättää? Moduuli 1 tehtävä 13</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;![CDATA[Minkälainen prosessi on kalvomuovin kierto syntypaikalta uusioraaka-aineeksi? Valitse seuraavista vaihtoehdoista oikea.]]&gt;</text>
+    </questiontext>
+    <generalfeedback>
+      <text/>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+  </question>
+  <question type="truefalse">
+    <name>
+      <text>Miksi rakentamisen muoveja pitää kerätä ja kierrättää? Moduuli 1 tehtävä 14</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;![CDATA[Millä erilaisilla toimilla toimitusketjussa ja rakennustyömaalla voidaan edistää materiaalitehokkuutta? Voit valita useita.]]&gt;</text>
+    </questiontext>
+    <generalfeedback>
+      <text/>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+  </question>
+  <question type="truefalse">
+    <name>
+      <text>Miksi rakentamisen muoveja pitää kerätä ja kierrättää? Moduuli 1 tehtävä 15</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;![CDATA[Tuotteen pakkauksen ja suojauksen optimoinnilla EI ole merkitystä materiaalitehokkuuteen.]]&gt;</text>
+    </questiontext>
+    <generalfeedback>
+      <text/>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+    <answer fraction="0">
+      <text>false</text>
+      <feedback>
+        <text/>
+      </feedback>
+    </answer>
+  </question>
+</quiz>
