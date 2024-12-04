@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build-all": "nodemon src/build-all.js --ignore output",
-    "build-final-mbz-backup": "nodemon src/final-mbz-builder.js --ignore output",
+    "build-all": "nodemon src/build-all.js --ignore output --ignore exported_data",
+    "build-final-mbz-backup": "nodemon src/final-mbz-builder.js --ignore output --ignore exported_data",
     "node:build-final-mbz-backup": "node src/final-mbz-builder.js",
     "copy-output-to-final": "sh ./copy-output-to-final.sh",
     "create-mbz-archive": "sh ./create-mbz.sh test-final-mbz",
