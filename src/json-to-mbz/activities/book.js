@@ -46,7 +46,7 @@ const createContent = (data) => {
     };
   });
 
-  
+
 };
 
 // Function to update XML with JSON content
@@ -180,7 +180,7 @@ const processBookXmlFiles = (lessonsJsonPath, topicsJsonPath, xmlDirPath) => {
 
         // Find the corresponding JSON content based on folderId
         const bookJsonContent = lessonsContentArray.find(content => content.moduleid == folderId);
-        
+
         // Filter chapters that match the book's ID (lessonId matches book_id)
         const chaptersJsonContent = topicsContentArray.filter(content => content.lessonId == folderId);
         const sortedChaptersJsonContent = chaptersJsonContent.sort((a, b) => a.order - b.order);

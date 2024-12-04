@@ -80,7 +80,11 @@ const removeWordPressClasses = (content) => {
   return content.replace(/class="wp-[^"]+"/g, "");
 };
 
-const generateHtml = ({ title, content }, path, theme) => {
+const generateHtmlContent = (title, content, path, theme) => {
+  if(!content) {
+    return '';
+  }
+
   const contentWithFiles = copyFiles(content, path, theme);
   const contentWithIframe = convertEmbedToIframe(contentWithFiles);
   const contentWithoutWordpress = removeWordPress(contentWithIframe);
@@ -94,6 +98,12 @@ const generateHtml = ({ title, content }, path, theme) => {
   const formattedContent = contentWithoutWordpressClasses;
 
   generateWarningLog(title, formattedContent);
+
+  return formattedContent;
+}
+
+const generateHtml = ({ title, content }, path, theme) => {
+  const formattedContent = generateHtmlContent(title, content, path, theme);
 
   return `
     <!DOCTYPE html>
@@ -112,5 +122,6 @@ const generateHtml = ({ title, content }, path, theme) => {
 };
 
 module.exports = {
+  generateHtmlContent,
   generateHtml,
 };

@@ -52,7 +52,7 @@ const jsonContent = (sectionData) => {
   // TODO: Check the layout in the website to ensure the correct data of sections
   const result = sectionData.map((section, index) => {
     return {
-      wp_post_id: section.wp_post_id, 
+      wp_post_id: section.wp_post_id,
       wp_post_content: [
         headings[index] || "", // Heading for this section (if exists)
         ...paragraphs.slice(index * 2, index * 2 + 2), // Two paragraphs per section

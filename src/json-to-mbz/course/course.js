@@ -55,7 +55,7 @@ const updateCourseXmlWithJsonContent = (xmlData, jsonContent) => {
 const enrol_id1 = () => parseInt(Math.random() * 100000);
 const enrol_id2 = () => parseInt(Math.random() * 100000);
 
-// function to update enrolments.xml 
+// function to update enrolments.xml
 const updateEnrolmentsXml = (xmlData, jsonContent) => {
   const parser = new xml2js.Parser();
   const builder = new xml2js.Builder({

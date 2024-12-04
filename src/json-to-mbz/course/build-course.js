@@ -2,11 +2,11 @@ const fs = require("fs");
 const path = require("path");
 const { processCourseXmlFile } = require("./course");
 const createCourseFolder = require("./create-course-folder");
-const generateCoursefiles = require("./create-course-files");
+const generateCourseFiles = require("./create-course-files");
 
 async function buildCourseXml(courseJsonFilePath, finalDir) {
   console.log("courseJsonFilePath", courseJsonFilePath);
-  
+
   const courseDir = path.join(finalDir, "course");
   const courseXmlPath = path.join(courseDir, "course.xml");
 
@@ -23,16 +23,15 @@ async function buildCourseXml(courseJsonFilePath, finalDir) {
     await createCourseFolder(courseDir);
 
     // Generate course files after folder creation
-    await generateCoursefiles(courseDir);
+    await generateCourseFiles(courseDir);
 
     // Process the XML files after files are generated
     await processCourseXmlFile(courseJsonFilePath, courseDir);
   } else {
-    
     // If the course folder exists, check if the XML file is missing
     if (!fs.existsSync(courseXmlPath)) {
       // Generate course files if the XML is missing
-      await generateCoursefiles(courseDir);
+      await generateCourseFiles(courseDir);
     }
 
     // Update the XML files with the new data
@@ -41,4 +40,3 @@ async function buildCourseXml(courseJsonFilePath, finalDir) {
 }
 
 module.exports = buildCourseXml;
-

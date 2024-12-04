@@ -4,14 +4,11 @@
   "main": "index.js",
   "scripts": {
     "build-all": "nodemon src/build-all.js --ignore output",
-    "build-mbz-backup": "nodemon src/mbz-backup-builder.js --ignore output",
-    "build-groups": "nodemon src/json-to-mbz/groups.js --ignore output",
     "build-final-mbz-backup": "nodemon src/final-mbz-builder.js --ignore output",
-    "node:build-mbz-backup": "node src/mbz-backup-builder.js",
     "node:build-final-mbz-backup": "node src/final-mbz-builder.js",
     "copy-output-to-final": "sh ./copy-output-to-final.sh",
-    "create-mbz-archive": "sh ./create-mbz.sh final-mbz",
-    "run-all": "npm run node:build-mbz-backup && npm run copy-output-to-final && npm run node:build-final-mbz-backup && npm run create-mbz-archive",
+    "create-mbz-archive": "sh ./create-mbz.sh test-final-mbz",
+    "run-all": "npm run node:build-final-mbz-backup && npm run create-mbz-archive",
     "mac:open-archive-folder": "open ./mbz-archive"
   },
   "author": "",

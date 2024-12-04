@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const generateCoursefiles = require("./create-course-files");
+const generateCourseFiles = require("./create-course-files");
 
 function createCourseFolder(outputDir) {
   //const courseDir = path.join(outputDir, "course");
@@ -14,7 +14,7 @@ function createCourseFolder(outputDir) {
   }
 
   // create xml files inside the course folder
-  generateCoursefiles(outputDir);
+  generateCourseFiles(outputDir);
 }
 
 module.exports = createCourseFolder;
