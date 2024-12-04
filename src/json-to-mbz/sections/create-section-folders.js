@@ -20,7 +20,7 @@ function createSectionsFolders(finalDir) {
     } else {
       console.log(`Sections directory already exists: ${sectionsDir}`);
     }
-    
+
     startId = 5631;
     numberOfSections = 4;
 

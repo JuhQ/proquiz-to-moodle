@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const xml2js = require("xml2js");
+const { generateHtmlContent } = require("../../utils/html");
 
 const generateRandomNumber = () => parseInt(Math.random() * 10000000);
 const att_id = () => parseInt(Math.random() * 20000);
@@ -40,7 +41,7 @@ const createContent = (data) => {
 };
 
 // Function to update XML with JSON content
-const updateXmlWithJsonContent = (xmlData, jsonContent) => {
+const updateXmlWithJsonContent = (xmlData, jsonContent, xmlFilePath, theme) => {
   const parser = new xml2js.Parser();
   const builder = new xml2js.Builder({
     xmldec: { standalone: null, encoding: "UTF-8" },
@@ -61,7 +62,7 @@ const updateXmlWithJsonContent = (xmlData, jsonContent) => {
       result.activity.page[0].name[0] = jsonContent.name;
       result.activity.page[0].intro[0] = "";
       result.activity.page[0].introformat[0] = jsonContent.contentformat;
-      result.activity.page[0].content[0] = jsonContent.content;
+      result.activity.page[0].content[0] = generateHtmlContent(jsonContent.name, jsonContent.content, xmlFilePath, theme);
       result.activity.page[0].contentformat[0] = jsonContent.contentformat;
       result.activity.page[0].legacyfiles[0] = jsonContent.legacyfiles;
       result.activity.page[0].legacyfileslast[0] = jsonContent.legacyfileslast;
@@ -124,7 +125,7 @@ const updateModuleXmlWithStaticContent = (xmlData, folderId, folderName) => {
 };
 
 // Function to read, update, and write XML files
-const processPageXmlFiles = (jsonFilePath, xmlDirPath) => {
+const processPageXmlFiles = (jsonFilePath, xmlDirPath, theme) => {
 
   fs.readFile(jsonFilePath, "utf8", (err, jsonData) => {
     if (err) {
@@ -141,29 +142,29 @@ const processPageXmlFiles = (jsonFilePath, xmlDirPath) => {
        const dirPath = path.join(xmlDirPath, dir);
        const xmlFilePath = path.join(dirPath, "page.xml");
        const moduleXmlFilePath = path.join(dirPath, "module.xml");
- 
+
        // Extract the folder ID and name from the directory name
        const [folderName, folderId] = dir.split('_');
- 
+
        // Find the corresponding jsonContent based on folderId
        const jsonContent = jsonContentArray.find(content => content.moduleid == folderId);
- 
+
        if (!jsonContent) {
          console.error(`No JSON content found for folder ID: ${folderId}`);
          return;
        }
- 
+
        console.log(`Processing page XML file: ${xmlFilePath}`);
        console.log(`Processing module XML file: ${moduleXmlFilePath}`);
- 
+
        // Update page.xml
        fs.readFile(xmlFilePath, "utf8", (err, xmlData) => {
          if (err) {
            console.error(`Error reading XML file: ${xmlFilePath}`, err);
            return;
          }
- 
-         updateXmlWithJsonContent(xmlData, jsonContent)
+
+         updateXmlWithJsonContent(xmlData, jsonContent, xmlFilePath, theme)
            .then((updatedXml) => {
              fs.writeFile(xmlFilePath, updatedXml, "utf8", (err) => {
                if (err) {

@@ -2,8 +2,6 @@ const fs = require("fs");
 const path = require("path");
 const xmlbuilder = require("xmlbuilder");
 const { parse } = require("../../utils/quiz-parser");
-const questionsJsonFilePath =
-  "./exported_data/json/export-file-quiz_pro_1-2024-07-01-11-30-19.json";
 
 const stamp = "moodle.stamp+241010084236+sD8fiO";
 
