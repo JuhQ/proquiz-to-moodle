@@ -1,7 +1,13 @@
+const fs = require("fs");
 const { write } = require("./utils");
 
 const generateTodoMarkdown = () => {
-  const todo = require("../../output/todo.json");
+  if (!fs.existsSync("../../output/todo.json")) {
+    return "";
+  }
+
+  // TODO: file path might need to be updated in the future
+  const todo = fs.readFileSync("../../output/todo.json", "utf8");
 
   let markdown = "";
   for (const [title, warnings] of Object.entries(todo)) {
