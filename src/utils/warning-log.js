@@ -21,10 +21,7 @@ const generateWarningArray = (results, message) => {
   const warnings = [];
 
   results.forEach((match) => {
-    console.warn(
-      "Found {site_url} which needs to be edited, check warning-logs",
-      match
-    );
+    console.warn("Check warning-logs for:", match);
     warnings.push(`${message}: ${match}`);
   });
 
@@ -78,6 +75,20 @@ const findImages = (content) => {
   return generateWarningArray(matches, "Image");
 };
 
+const findH2Tags = (content) => {
+  const regex = /<h2/g;
+  const matches = content.match(regex);
+
+  if (!matches) {
+    return;
+  }
+
+  return generateWarningArray(
+    matches,
+    "Heading 2 tag needs be converted to Heading 3. <h2> -> <h3>"
+  );
+};
+
 const log = {};
 
 const generateTodoJson = (title, content) => {
@@ -85,34 +96,24 @@ const generateTodoJson = (title, content) => {
   const motiveWarnings = findMotiva(content);
   const images = findImages(content);
   const audioTags = findAudioTags(content);
+  const h2Tags = findH2Tags(content);
 
-  if (siteUrlWarnings) {
-    log[title] = {
-      ...log[title],
-      siteUrlWarnings: siteUrlWarnings,
-    };
-  }
+  const logs = {
+    siteUrlWarnings,
+    motiveWarnings,
+    images,
+    audioTags,
+    h2Tags,
+  };
 
-  if (motiveWarnings) {
-    log[title] = {
-      ...log[title],
-      motiveWarnings: motiveWarnings,
-    };
-  }
-
-  if (images) {
-    log[title] = {
-      ...log[title],
-      images: images,
-    };
-  }
-
-  if (audioTags) {
-    log[title] = {
-      ...log[title],
-      audioTags: audioTags,
-    };
-  }
+  Object.keys(logs).forEach((key) => {
+    if (logs[key]) {
+      log[title] = {
+        ...log[title],
+        [key]: logs[key],
+      };
+    }
+  });
 
   writeTodoJson(log);
 };
